@@ -15,9 +15,24 @@
     <main>
       <section id="activities-container">
         <h3>Available Activities</h3>
+
+        <div id="search-controls">
+          <input type="search" id="search-q" placeholder="Search activities..." />
+          <select id="search-category">
+            <option value="">All categories</option>
+          </select>
+          <button id="search-btn">Search</button>
+        </div>
+
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
+        </div>
+
+        <div id="pagination-controls" class="hidden">
+          <button id="prev-page">Previous</button>
+          <span id="page-info"></span>
+          <button id="next-page">Next</button>
         </div>
       </section>
 
